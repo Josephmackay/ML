@@ -1,5 +1,14 @@
-pandas
-scikit-learn
-imblearn
-matplotlib
-numpy
+# Core Python Libraries
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.1
+seaborn==0.13.2
+
+# Machine Learning
+scikit-learn==1.5.2
+
+# Utility and Logging
+joblib==1.4.2
+
+
+
