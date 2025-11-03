@@ -143,3 +143,4 @@ src/logs/pipeline.log
 | Precision |  0.99 |
 | Recall    |  0.87 |
 | F1-score  |  0.93 |
+
