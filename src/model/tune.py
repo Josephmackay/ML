@@ -3,6 +3,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 import joblib
+import os
 from src.logs.logger_config import get_logger
 logger = get_logger(__name__)
 
@@ -29,6 +30,8 @@ def tune_logreg(X_train, y_train, cv=5, save_path="saved_models/log_reg_best.pkl
     logger.info(f"Best Params: {grid.best_params_}")
     logger.info(f"Best Score: {grid.best_score_}")
 
+    save_path = os.path.join(os.path.dirname(__file__), "saved_models", "log_reg_best.pkl")
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
     joblib.dump(grid.best_estimator_, save_path)
     logger.info(f"Tuned model saved to {save_path}")
 

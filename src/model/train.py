@@ -6,6 +6,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import joblib  # For saving models
+import os
 from src.logs.logger_config import get_logger
 logger = get_logger(__name__)
 
@@ -49,7 +50,7 @@ def train_model(X, y, cv=5, save_path="saved_models/log_reg_model.pkl"):
     logger.info(f"Classification Report:\n {classification_report(y_test, y_pred)}")
 
     # Save model
+    save_path = os.path.join(os.path.dirname(__file__), "saved_models", "log_reg_model.pkl")
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
     joblib.dump(log_reg, save_path)
-    logger.info(f"Model saved to {save_path}")
-
     return log_reg, X_train, X_test, y_train, y_test

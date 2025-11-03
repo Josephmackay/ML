@@ -34,3 +34,173 @@ weighted avg       0.94      0.93      0.93     90278
 2025-10-26 22:37:47,193 - INFO - src.model.train - Model saved to src/model/saved_models/log_reg_model.pkl
 2025-10-26 22:37:47,215 - INFO - __main__ - 
 Pipeline completed successfully!
+2025-10-30 23:06:34,933 - INFO - src.data.data_import - Loading dataset from: C:\Users\DELL\Desktop\ML\data\Loan_default.csv
+2025-10-30 23:06:35,703 - INFO - src.data.data_import - Loading dataset from: C:\Users\DELL\Desktop\ML\data\Loan_default.csv
+2025-10-30 23:06:37,113 - INFO - src.model.train - Before SMOTE: Counter({0: 225694, 1: 29653})
+2025-10-30 23:06:45,674 - INFO - src.model.train - After SMOTE: Counter({0: 225694, 1: 225694})
+2025-10-30 23:06:56,074 - INFO - src.model.train - 
+=== Logistic Regression ===
+2025-10-30 23:06:56,074 - INFO - src.model.train - Cross-Validation Accuracy: [0.93465149 0.93381241 0.93381241]
+2025-10-30 23:06:56,075 - INFO - src.model.train - Mean Accuracy: 0.9341 (+/- 0.0004)
+2025-10-30 23:07:01,179 - INFO - src.model.train - 
+=== Logistic Regression Test Results ===
+2025-10-30 23:07:01,187 - INFO - src.model.train - Accuracy: 0.9340592392387957
+2025-10-30 23:07:01,204 - INFO - src.model.train - Confusion Matrix:
+ [[44854   285]
+ [ 5668 39471]]
+2025-10-30 23:07:01,259 - INFO - src.model.train - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.89      0.99      0.94     45139
+           1       0.99      0.87      0.93     45139
+
+    accuracy                           0.93     90278
+   macro avg       0.94      0.93      0.93     90278
+weighted avg       0.94      0.93      0.93     90278
+
+2025-10-30 23:07:01,316 - INFO - src.model.train - Before SMOTE: Counter({0: 50, 1: 50})
+2025-10-30 23:07:01,325 - INFO - src.model.train - After SMOTE: Counter({0: 50, 1: 50})
+2025-10-30 23:07:01,374 - INFO - src.model.train - 
+=== Logistic Regression ===
+2025-10-30 23:07:01,374 - INFO - src.model.train - Cross-Validation Accuracy: [0.92592593 1.         1.        ]
+2025-10-30 23:07:01,375 - INFO - src.model.train - Mean Accuracy: 0.9753 (+/- 0.0349)
+2025-10-30 23:07:01,385 - INFO - src.model.train - 
+=== Logistic Regression Test Results ===
+2025-10-30 23:07:01,386 - INFO - src.model.train - Accuracy: 1.0
+2025-10-30 23:07:01,388 - INFO - src.model.train - Confusion Matrix:
+ [[10  0]
+ [ 0 10]]
+2025-10-30 23:07:01,400 - INFO - src.model.train - Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        10
+           1       1.00      1.00      1.00        10
+
+    accuracy                           1.00        20
+   macro avg       1.00      1.00      1.00        20
+weighted avg       1.00      1.00      1.00        20
+
+2025-10-30 23:07:16,842 - INFO - src.model.tune - Best Params: {'clf__C': 1, 'clf__class_weight': None, 'clf__l1_ratio': 0, 'clf__penalty': 'l1', 'clf__solver': 'liblinear'}
+2025-10-30 23:07:16,842 - INFO - src.model.tune - Best Score: 0.97
+2025-10-30 23:16:29,755 - INFO - src.data.data_import - Loading dataset from: C:\Users\DELL\Desktop\ML\data\Loan_default.csv
+2025-10-30 23:16:30,502 - INFO - src.data.data_import - Loading dataset from: C:\Users\DELL\Desktop\ML\data\Loan_default.csv
+2025-10-30 23:16:31,745 - INFO - src.model.train - Before SMOTE: Counter({0: 225694, 1: 29653})
+2025-10-30 23:16:38,857 - INFO - src.model.train - After SMOTE: Counter({0: 225694, 1: 225694})
+2025-10-30 23:16:48,289 - INFO - src.model.train - 
+=== Logistic Regression ===
+2025-10-30 23:16:48,290 - INFO - src.model.train - Cross-Validation Accuracy: [0.93465149 0.93381241 0.93381241]
+2025-10-30 23:16:48,290 - INFO - src.model.train - Mean Accuracy: 0.9341 (+/- 0.0004)
+2025-10-30 23:16:52,692 - INFO - src.model.train - 
+=== Logistic Regression Test Results ===
+2025-10-30 23:16:52,696 - INFO - src.model.train - Accuracy: 0.9340592392387957
+2025-10-30 23:16:52,702 - INFO - src.model.train - Confusion Matrix:
+ [[44854   285]
+ [ 5668 39471]]
+2025-10-30 23:16:52,741 - INFO - src.model.train - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.89      0.99      0.94     45139
+           1       0.99      0.87      0.93     45139
+
+    accuracy                           0.93     90278
+   macro avg       0.94      0.93      0.93     90278
+weighted avg       0.94      0.93      0.93     90278
+
+2025-10-30 23:16:52,903 - INFO - src.model.train - Before SMOTE: Counter({0: 50, 1: 50})
+2025-10-30 23:16:52,907 - INFO - src.model.train - After SMOTE: Counter({0: 50, 1: 50})
+2025-10-30 23:16:52,957 - INFO - src.model.train - 
+=== Logistic Regression ===
+2025-10-30 23:16:52,957 - INFO - src.model.train - Cross-Validation Accuracy: [0.92592593 1.         1.        ]
+2025-10-30 23:16:52,957 - INFO - src.model.train - Mean Accuracy: 0.9753 (+/- 0.0349)
+2025-10-30 23:16:52,965 - INFO - src.model.train - 
+=== Logistic Regression Test Results ===
+2025-10-30 23:16:52,966 - INFO - src.model.train - Accuracy: 1.0
+2025-10-30 23:16:52,967 - INFO - src.model.train - Confusion Matrix:
+ [[10  0]
+ [ 0 10]]
+2025-10-30 23:16:52,975 - INFO - src.model.train - Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        10
+           1       1.00      1.00      1.00        10
+
+    accuracy                           1.00        20
+   macro avg       1.00      1.00      1.00        20
+weighted avg       1.00      1.00      1.00        20
+
+2025-10-30 23:17:07,664 - INFO - src.model.tune - Best Params: {'clf__C': 1, 'clf__class_weight': None, 'clf__l1_ratio': 0, 'clf__penalty': 'l1', 'clf__solver': 'liblinear'}
+2025-10-30 23:17:07,664 - INFO - src.model.tune - Best Score: 0.97
+2025-10-30 23:17:07,670 - INFO - src.model.tune - Tuned model saved to C:\Users\DELL\Desktop\ML\src\model\saved_models\log_reg_best.pkl
+2025-10-31 08:23:30,422 - INFO - src.data.data_import - Loading dataset from: C:\Users\DELL\Desktop\ML\data\Loan_default.csv
+2025-10-31 08:23:31,612 - INFO - src.data.data_import - Loading dataset from: C:\Users\DELL\Desktop\ML\data\Loan_default.csv
+2025-10-31 08:23:33,236 - INFO - src.model.train - Before SMOTE: Counter({0: 225694, 1: 29653})
+2025-10-31 08:23:42,517 - INFO - src.model.train - After SMOTE: Counter({0: 225694, 1: 225694})
+2025-10-31 08:23:54,647 - INFO - src.model.train - 
+=== Logistic Regression ===
+2025-10-31 08:23:54,647 - INFO - src.model.train - Cross-Validation Accuracy: [0.93465149 0.93381241 0.93381241]
+2025-10-31 08:23:54,648 - INFO - src.model.train - Mean Accuracy: 0.9341 (+/- 0.0004)
+2025-10-31 08:23:58,573 - INFO - src.model.train - 
+=== Logistic Regression Test Results ===
+2025-10-31 08:23:58,577 - INFO - src.model.train - Accuracy: 0.9340592392387957
+2025-10-31 08:23:58,594 - INFO - src.model.train - Confusion Matrix:
+ [[44854   285]
+ [ 5668 39471]]
+2025-10-31 08:23:58,654 - INFO - src.model.train - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.89      0.99      0.94     45139
+           1       0.99      0.87      0.93     45139
+
+    accuracy                           0.93     90278
+   macro avg       0.94      0.93      0.93     90278
+weighted avg       0.94      0.93      0.93     90278
+
+2025-10-31 08:23:58,873 - INFO - src.model.train - Before SMOTE: Counter({0: 50, 1: 50})
+2025-10-31 08:23:58,881 - INFO - src.model.train - After SMOTE: Counter({0: 50, 1: 50})
+2025-10-31 08:23:58,934 - INFO - src.model.train - 
+=== Logistic Regression ===
+2025-10-31 08:23:58,934 - INFO - src.model.train - Cross-Validation Accuracy: [0.92592593 1.         1.        ]
+2025-10-31 08:23:58,935 - INFO - src.model.train - Mean Accuracy: 0.9753 (+/- 0.0349)
+2025-10-31 08:23:58,943 - INFO - src.model.train - 
+=== Logistic Regression Test Results ===
+2025-10-31 08:23:58,944 - INFO - src.model.train - Accuracy: 1.0
+2025-10-31 08:23:58,945 - INFO - src.model.train - Confusion Matrix:
+ [[10  0]
+ [ 0 10]]
+2025-10-31 08:23:58,954 - INFO - src.model.train - Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        10
+           1       1.00      1.00      1.00        10
+
+    accuracy                           1.00        20
+   macro avg       1.00      1.00      1.00        20
+weighted avg       1.00      1.00      1.00        20
+
+2025-10-31 08:24:13,368 - INFO - src.model.tune - Best Params: {'clf__C': 1, 'clf__class_weight': None, 'clf__l1_ratio': 0, 'clf__penalty': 'l1', 'clf__solver': 'liblinear'}
+2025-10-31 08:24:13,368 - INFO - src.model.tune - Best Score: 0.97
+2025-10-31 08:24:13,373 - INFO - src.model.tune - Tuned model saved to C:\Users\DELL\Desktop\ML\src\model\saved_models\log_reg_best.pkl
+2025-10-31 08:44:54,941 - INFO - src.data.data_import - Loading dataset from: C:\Users\DELL\Desktop\ML\data\Loan_default.csv
+2025-10-31 08:44:55,767 - INFO - src.data.data_import - Loading dataset from: C:\Users\DELL\Desktop\ML\data\Loan_default.csv
+2025-10-31 08:44:57,016 - INFO - src.model.train - Before SMOTE: Counter({0: 225694, 1: 29653})
+2025-10-31 08:45:05,625 - INFO - src.model.train - After SMOTE: Counter({0: 225694, 1: 225694})
+2025-10-31 08:45:20,541 - INFO - src.model.train - 
+=== Logistic Regression ===
+2025-10-31 08:45:20,542 - INFO - src.model.train - Cross-Validation Accuracy: [0.93465149 0.93381241 0.93381241]
+2025-10-31 08:45:20,543 - INFO - src.model.train - Mean Accuracy: 0.9341 (+/- 0.0004)
+2025-10-31 08:45:26,592 - INFO - src.model.train - 
+=== Logistic Regression Test Results ===
+2025-10-31 08:45:26,603 - INFO - src.model.train - Accuracy: 0.9340592392387957
+2025-10-31 08:45:26,619 - INFO - src.model.train - Confusion Matrix:
+ [[44854   285]
+ [ 5668 39471]]
+2025-10-31 08:45:26,726 - INFO - src.model.train - Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.89      0.99      0.94     45139
+           1       0.99      0.87      0.93     45139
+
+    accuracy                           0.93     90278
+   macro avg       0.94      0.93      0.93     90278
+weighted avg       0.94      0.93      0.93     90278
+
